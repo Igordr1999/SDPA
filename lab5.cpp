@@ -13,7 +13,7 @@ int main(){
 
 	while (speech != NULL){	// while there are lexemes
 		words[speech]++;
-		speech = strtok(NULL, " ,.-?!");
+		speech = strtok(NULL, " ,.-;:?!«»");
 	}
 	cout << endl<<"Word\tTotal"<<endl;
 	for (auto it = words.begin(); it != words.end(); it++){
