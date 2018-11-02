@@ -57,5 +57,5 @@ int main(){
 	cout << k3 << " " << n3 << " " << answer(a, b, k3, n3) << endl;
 	cout << k4 << " " << n4 << " " << answer(a, b, k4, n4) << endl;
 	cout << k5 << " " << n5 << " " << answer(a, b, k5, n5) << endl;
-   return 0;
+  	return 0;
 }
