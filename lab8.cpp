@@ -48,8 +48,7 @@ void output_array(int n, int m, int choise) {
 }
 
 int main(){
-	int choise, n, m, input_int;
-	string input_str;
+	int choise, n, m;
 	cout << "Choise: \n1) Integer array; \n2) String array."<<endl;
 	cout << "Your answer: ";
 	cin >> choise;
