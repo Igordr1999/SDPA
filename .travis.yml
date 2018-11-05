@@ -1,0 +1,32 @@
+language: cpp
+dist: trusty
+sudo: required
+compiler: clang
+
+env: COMPILER_NAME=clang CXX=clang++-3.8 CC=clang-3.8
+addons:
+  apt:
+    packages:
+      - clang-3.8
+    sources: *sources
+
+install: 
+  # clang
+  - sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-3.8 90
+  - sudo update-alternatives --install /usr/bin/clang clang /usr/bin/clang-3.8 90
+  # clang STL
+  - sudo apt-get install -y libc++-dev libc++abi-dev
+
+script:
+  - clang++ -v
+  - clang++ -o main -std=c++14 -stdlib=libc++ lab1.cpp
+  - clang++ -o main -std=c++14 -stdlib=libc++ lab2.cpp
+  - clang++ -o main -std=c++14 -stdlib=libc++ lab3.cpp
+  - clang++ -o main -std=c++14 -stdlib=libc++ lab4.cpp
+  - clang++ -o main -std=c++14 -stdlib=libc++ lab5.cpp
+  - clang++ -o main -std=c++14 -stdlib=libc++ lab6.cpp
+  - clang++ -o main -std=c++14 -stdlib=libc++ lab7.cpp
+  - clang++ -o main -std=c++14 -stdlib=libc++ lab8.cpp
+  - clang++ -o main -std=c++14 -stdlib=libc++ lab9.cpp
+  - clang++ -o main -std=c++14 -stdlib=libc++ lab10.cpp
+  - clang++ -o main -std=c++14 -stdlib=libc++ lab11.cpp
