@@ -15,5 +15,13 @@
       </a>
     </td>
   </tr>
+  <tr>
+    <td>develop</td>
+    <td>
+      <a href="https://travis-ci.com/Igordr1999/SDPA">
+        <img src="https://travis-ci.com/Igordr1999/SDPA.svg?branch=develop" alt="develop branch">
+      </a>
+    </td>
+  </tr>
 </table>
 
